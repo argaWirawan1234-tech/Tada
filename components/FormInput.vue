@@ -67,7 +67,9 @@ export default {
         const dataStatic = {code: 'RT3080', date: '20 Sep 2021', person: this.formInput[4].value, amount: '123456', status: 'Pending'}
         this.addInvoices(dataStatic)
         this.close()
-        window.location.reload()
+        setTimeout(() => {
+            window.location.reload()
+        }, 1000)
     }
     }
 }
